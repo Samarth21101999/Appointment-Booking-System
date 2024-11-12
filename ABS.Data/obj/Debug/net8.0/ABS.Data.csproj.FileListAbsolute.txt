@@ -1,0 +1,17 @@
+D:\ASP.NET Project\Demo\ABS.Data\bin\Debug\net8.0\ABS.Data.deps.json
+D:\ASP.NET Project\Demo\ABS.Data\bin\Debug\net8.0\ABS.Data.dll
+D:\ASP.NET Project\Demo\ABS.Data\bin\Debug\net8.0\ABS.Data.pdb
+D:\ASP.NET Project\Demo\ABS.Data\bin\Debug\net8.0\ABS.Entities.dll
+D:\ASP.NET Project\Demo\ABS.Data\bin\Debug\net8.0\ABS.Entities.pdb
+D:\ASP.NET Project\Demo\ABS.Data\obj\Debug\net8.0\ABS.Data.csproj.AssemblyReference.cache
+D:\ASP.NET Project\Demo\ABS.Data\obj\Debug\net8.0\ABS.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP.NET Project\Demo\ABS.Data\obj\Debug\net8.0\ABS.Data.AssemblyInfoInputs.cache
+D:\ASP.NET Project\Demo\ABS.Data\obj\Debug\net8.0\ABS.Data.AssemblyInfo.cs
+D:\ASP.NET Project\Demo\ABS.Data\obj\Debug\net8.0\ABS.Data.csproj.CoreCompileInputs.cache
+D:\ASP.NET Project\Demo\ABS.Data\obj\Debug\net8.0\ABS.Data.csproj.Up2Date
+D:\ASP.NET Project\Demo\ABS.Data\obj\Debug\net8.0\ABS.Data.dll
+D:\ASP.NET Project\Demo\ABS.Data\obj\Debug\net8.0\refint\ABS.Data.dll
+D:\ASP.NET Project\Demo\ABS.Data\obj\Debug\net8.0\ABS.Data.pdb
+D:\ASP.NET Project\Demo\ABS.Data\obj\Debug\net8.0\ref\ABS.Data.dll
+D:\ASP.NET Project\Demo\ABS.Data\bin\Debug\net8.0\ABS.Data.runtimeconfig.json
+D:\ASP.NET Project\Demo\ABS.Data\obj\Debug\net8.0\ABS.Data.genruntimeconfig.cache

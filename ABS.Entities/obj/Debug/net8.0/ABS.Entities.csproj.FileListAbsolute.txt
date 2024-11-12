@@ -1,0 +1,14 @@
+D:\ASP.NET Project\Demo\ABS.Entities\bin\Debug\net8.0\ABS.Entities.deps.json
+D:\ASP.NET Project\Demo\ABS.Entities\bin\Debug\net8.0\ABS.Entities.dll
+D:\ASP.NET Project\Demo\ABS.Entities\bin\Debug\net8.0\ABS.Entities.pdb
+D:\ASP.NET Project\Demo\ABS.Entities\obj\Debug\net8.0\ABS.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP.NET Project\Demo\ABS.Entities\obj\Debug\net8.0\ABS.Entities.AssemblyInfoInputs.cache
+D:\ASP.NET Project\Demo\ABS.Entities\obj\Debug\net8.0\ABS.Entities.AssemblyInfo.cs
+D:\ASP.NET Project\Demo\ABS.Entities\obj\Debug\net8.0\ABS.Entities.csproj.CoreCompileInputs.cache
+D:\ASP.NET Project\Demo\ABS.Entities\obj\Debug\net8.0\ABS.Entities.dll
+D:\ASP.NET Project\Demo\ABS.Entities\obj\Debug\net8.0\refint\ABS.Entities.dll
+D:\ASP.NET Project\Demo\ABS.Entities\obj\Debug\net8.0\ABS.Entities.pdb
+D:\ASP.NET Project\Demo\ABS.Entities\obj\Debug\net8.0\ref\ABS.Entities.dll
+D:\ASP.NET Project\Demo\ABS.Entities\bin\Debug\net8.0\ABS.Entities.runtimeconfig.json
+D:\ASP.NET Project\Demo\ABS.Entities\obj\Debug\net8.0\ABS.Entities.csproj.AssemblyReference.cache
+D:\ASP.NET Project\Demo\ABS.Entities\obj\Debug\net8.0\ABS.Entities.genruntimeconfig.cache
