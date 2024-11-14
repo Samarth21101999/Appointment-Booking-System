@@ -8,17 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ABS.Logic.Logic
 {
    public class AppointmentLogic:IAppointmentLogic
     {
-        private readonly AppointmentRepository _appointmentRepository;
+        private readonly IAppointmentRepository _appointmentRepository;
         private readonly DataContext _context;
-        public AppointmentLogic(AppointmentRepository appointmentRepository, DataContext dataContext) {
+        public AppointmentLogic(IAppointmentRepository appointmentRepository, DataContext dataContext) {
             _appointmentRepository = appointmentRepository;
             _context = dataContext;
-
-
         }
        /* public List<AppointmentLogic> GetAppointmentsList()
         {
@@ -26,6 +25,7 @@ namespace ABS.Logic.Logic
             appointments = (List<AppointmentLogic>)_appointmentRepository.GetAppointments();
             return appointments;
         }*/
+
 
         public async Task<ICollection<Appointment>> GetAppointmentAsync()
         {
@@ -37,14 +37,24 @@ namespace ABS.Logic.Logic
             return await _appointmentRepository.CreateAppointment(appointment);
         }
 
-        public async Task<Appointment> GetAppointmentById(Guid id)
+        public Appointment GetAppointmentById(Guid id)
         {
-            return await _appointmentRepository.GetAppointmentById(id);
+            return _appointmentRepository.GetAppointmentById(id);
         }
         public async Task<Appointment> UpdateAppointment(Appointment appointment)
         {
             
             return await _appointmentRepository.UpdateAppointment(appointment);
         }
+
+        public async Task<bool> DeleteAppointment(Guid id)
+        {
+            if (!await _appointmentRepository.AppointmentExists(id))
+            {
+                throw new KeyNotFoundException("Appointment not found.");
+            }
+            return await _appointmentRepository.DeleteAppointment(id);
+        }
+
     }
 }

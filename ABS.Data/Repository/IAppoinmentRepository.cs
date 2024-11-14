@@ -7,14 +7,17 @@ using System.Threading.Tasks;
 
 namespace ABS.Data.Repository
 {
-    public interface IAppoinmentRepository
+    public interface IAppointmentRepository
     {
-        Task<ICollection<Appointment>> GetAppointmentsAsync();
+        Task<ICollection<Appointment>> GetAppointments();
         Task<Appointment> CreateAppointment(Appointment appointment);
 
-        bool AppointmentExists(Guid id);
+        Task<bool> AppointmentExists(Guid id);
         Task<Appointment> UpdateAppointment(Appointment appointment);
 
-        Task<Appointment> GetAppointmentById(Guid id);
+        Appointment GetAppointmentById(Guid id);
+
+        Task<bool> DeleteAppointment(Guid id);
+
     }
 }

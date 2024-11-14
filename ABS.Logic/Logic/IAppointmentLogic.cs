@@ -10,6 +10,8 @@ namespace ABS.Logic.Logic
 
         Task<Appointment> UpdateAppointment(Appointment appointment);
 
-        Task<Appointment> GetAppointmentById(Guid id);
+        Appointment GetAppointmentById(Guid id);
+
+        Task<bool> DeleteAppointment(Guid id);
     }
 }
