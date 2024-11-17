@@ -15,6 +15,7 @@ namespace ABS.Entities.Model
         public string LastName { get; set; }
 
         public string Email { get; set; }
+        public ulong PhoneNumber { get; set; }
 
         public string AppointmentType { get; set; }
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ABS.Entities")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b376acbbb4562f468a85b1613ee56efaa9de7091")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7390f4c314bd4707f710e7c74a2dbc70d2c92adc")]
 [assembly: System.Reflection.AssemblyProductAttribute("ABS.Entities")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ABS.Entities")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

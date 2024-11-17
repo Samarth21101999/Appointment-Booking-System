@@ -1,0 +1,52 @@
+<div class="container mt-3">
+    <h2>Book an Appointment</h2>
+    <form [formGroup]="appointmentForm" (ngSubmit)="onSubmit()">
+  
+      <div class="form-group">
+        <label for="AppointmentType">Appointment Type</label>
+        <select class="form-control" id="AppointmentType" name="AppointmentType" formControlName="AppointmentType" required>
+          <option value="Haircut">Haircut</option>
+          <option value="Massage">Massage</option>
+          <option value="Physiotherapy">Physiotherapy</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="AppointmentTime">Time Interval</label>
+        <select class="form-control" id="AppointmentTime" name="AppointmentTime" formControlName="AppointmentTime" required>
+          <option value="9:00 AM">9:00 AM</option>
+          <option value="9:30 AM">9:30 AM</option>
+          <option value="10:00 AM">10:00 AM</option>
+          <!-- Add more time intervals -->
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="FirstName">First Name</label>
+        <input type="text" class="form-control" id="FirstName" name="FirstName" formControlName="FirstName" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="LastName">Last Name</label>
+        <input type="text" class="form-control" id="LastName" name="LastName" formControlName="LastName" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="Email" class="form-control" id="Email" name="Email" formControlName="Email" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="PhoneNumber">Phone Number</label>
+        <input type="text" class="form-control" id="PhoneNumber" name="PhoneNumber" formControlName="PhoneNumber" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="Comment">Comments</label>
+        <textarea class="form-control" id="Comment" name="Comment" formControlName="Comment"></textarea>
+      </div>
+  
+      <button type="submit" class="btn btn-primary" [disabled]="!appointmentForm.valid">Submit</button>
+    </form>
+  </div>
+  
