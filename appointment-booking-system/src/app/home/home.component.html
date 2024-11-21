@@ -23,7 +23,7 @@
           <td>{{ appointment.comment }}</td>
           <td>
             <!-- Edit and Delete buttons -->
-            <button class="btn btn-warning" (click)="onEdit(appointment)">Edit</button>
+            <button class="btn btn-warning" [routerLink]="['/edit-appointment', appointment.id]">Edit</button>
             <button class="btn btn-danger" (click)="onDelete(appointment.id)">Delete</button>
           </td>
         </tr>

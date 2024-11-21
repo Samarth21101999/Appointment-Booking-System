@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ABS.Entities.Model;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,8 @@ namespace ABS.Data.Data
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
         public DbSet<Entities.Model.Appointment> Appointments { get; set; }
+
+      
 
     }
      

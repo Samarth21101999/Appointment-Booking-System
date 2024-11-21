@@ -16,13 +16,17 @@ export class AppointmentService {
     return this.http.get<any[]>(this.apiUrl);
   }
 
+  getAppointmentById(id: string): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/${id}`);    
+  }
+
   // Add a new appointment
   createAppointment(appointmentData: any): Observable<any> {
     return this.http.post(this.apiUrl, appointmentData);  // Send POST request to backend
   }
 
-  // Update an existing appointment
-  updateAppointment(id: number, appointment: any): Observable<any> {
+  // Edit an existing appointment
+  editAppointment(id: string, appointment: any): Observable<any> {
     return this.http.put<any>(`${this.apiUrl}/${id}`, appointment);
   }
 

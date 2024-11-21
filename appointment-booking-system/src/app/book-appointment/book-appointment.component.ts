@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';  // HttpClient is now directly available
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { Router,RouterLink } from '@angular/router';
 @Component({
   selector: 'app-book-appointment',
   standalone: true,  // Mark the component as standalone
@@ -18,7 +19,8 @@ export class BookAppointmentComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder, 
-    private http: HttpClient  // Inject HttpClient for making API calls
+    private http: HttpClient,  // Inject HttpClient for making API calls,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -64,14 +66,14 @@ export class BookAppointmentComponent implements OnInit {
     today.setMinutes(minute);
 
     // Assign the date to AppointmentTime in ISO format
-    formData.AppointmentTime = today.toISOString();
+    formData.AppointmentTime = new Date(today).toISOString();
 
       console.log('Appointment details:', this.appointmentForm.value);
       // Make an HTTP request to the backend
       this.http.post('https://localhost:7250/api/Appointment', this.appointmentForm.value)
         .subscribe({
           next: (response) => {
-            console.log('Appointment booked successfully', response);
+           this.router.navigate(['/']);
           },
           error: (error) => {
             console.error('Error booking appointment', error);

@@ -20,6 +20,7 @@ namespace ABS.Entities.Model
         public string AppointmentType { get; set; }
 
         public string Comment { get; set; }
+
         public DateTime AppointmentTime { get; set; }
     }
 }

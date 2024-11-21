@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { AppointmentService } from '../services/appointment.service';
 import { Appointment } from '../models/appointment.model';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -31,9 +32,7 @@ export class HomeComponent {
     });
   }
   onEdit(appointment: any): void {
-    console.log('Edit appointment:', appointment);
-    // You can use Angular Router to navigate to the Edit Appointment page
-    // Or open a modal for editing the appointment
+   
   }
 
   // Delete appointment method
